@@ -40,12 +40,13 @@
 
         #map a {
             position: relative;
-            transform: translate(25%, -250px);
+            align-items: center;
+            transform: translateY(-250px);
             z-index: 999;
         }
 
         #map {
-            margin-bottom: -32px;
+            margin-bottom: -52px;
         }
 
         #hantaran .valign-wrapper {
@@ -106,9 +107,24 @@
 
     <div class="col s12" id="map">
         <img src="assets/images/page/5.jpg" alt="Wedding Invitation" class="img-wrap" />
-        <a href="https://goo.gl/maps/Gh2LerGdLBdAYPvB6" class="center btn btn-primary-bg" target="_blank">
-            <i class="mdi mdi-pin"></i> Lapangan Koramil Taktakan
-        </a>
+        
+
+        <div class="valign-wrapper">
+
+            <div class="container">
+                <div class="row center">
+                    <div class="col s1"></div>
+                    <div class="col s10">
+                        <a href="https://goo.gl/maps/Gh2LerGdLBdAYPvB6" class="center btn btn-primary-bg" target="_blank">
+                            <i class="mdi mdi-pin"></i> Lapangan Koramil Taktakan
+                        </a>
+                    </div>
+                    <div class="col s1"></div>
+                </div>
+            </div>
+        </div>
+
+        
     </div>
 
 
@@ -177,27 +193,8 @@
         </div>
     </div>
 
-    <div class="col s12" id="salamkami" style="display:none;">
+    <div class="col s12" id="salamkami">
         <img src="assets/images/page/8.jpg" alt="Wedding Invitation" class="img-wrap" />
-    </div>
-
-    <script>
-        // Add this code to your JavaScript file
-        const salamkami = document.getElementById("salamkami");
-
-
-        function revealModal() {
-            salamkami.style.display = "block";
-        }
-
-        window.addEventListener('scroll', function () {
-            if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
-                revealModal();
-            }
-        });
-    </script>
-    </div>
-
     </div>
 
     <div class="footer-menu" style="display: none;">
